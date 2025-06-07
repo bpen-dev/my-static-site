@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[あなたの名前] - Portfolio</title>
+    <title>Bochipen's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
         <div class="container">
-            <h1 class="logo">[あなたの名前]</h1>
+            <a href="#" class="logo">Bochipen</a>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#works">Works</a></li>
-                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#profile">Profile</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -28,9 +28,8 @@
     <main>
         <section id="hero">
             <div class="container">
-                <h2>[あなたの職業や肩書き]</h2>
-                <p>[あなたのキャッチコピーや簡単な自己紹介をここに書きます]</p>
-                <a href="#works" class="button">実績を見る</a>
+                <h1>ぼちペン</h1>
+                <p>理系大学院生 / Aspiring SIer</p>
             </div>
         </section>
 
@@ -38,74 +37,81 @@
             <div class="container">
                 <h2>About Me</h2>
                 <div class="about-content">
-                    <img src="images/profile.jpg" alt="プロフィール写真" class="profile-pic">
                     <p>
-                        ここにあなたの自己紹介文を記述します。これまでの経歴、得意なこと、価値観などを自由に表現してください。
-                        訪問者があなたに興味を持つような内容を心がけましょう。文章は複数段落になっても構いません。
+                        はじめまして！「理系大学院生のぼちぼちITノート」を運営する、ぼちペンと申します。<br>
+                        現在、理系の大学院修士2年で、2026年度からユーザー系SIerに勤務予定です。<br>
+                        個人的に資産形成やITの勉強に取り組んでおり、その過程で得た知識や経験を発信しています。
+                    </p>
+                    <h3>Why I Blog</h3>
+                    <p>
+                        私がブログを運営している理由は、単にお金を稼ぐためだけではありません。自ら情報発信する媒体を持つこと、そしてアウトプットを前提とすることで様々なことへ興味を広げ、知識を深めるモチベーションに繋がると考えています。金銭以上の価値ある経験を積み重ねていくことが目標です。
                     </p>
                 </div>
             </div>
         </section>
 
-        <section id="works" class="content-section">
+        <section id="blog" class="content-section">
             <div class="container">
-                <h2>Works</h2>
-                <div class="works-grid">
-                    <div class="work-item">
-                        <img src="images/work1.jpg" alt="作品1の画像">
-                        <h3>作品タイトル 1</h3>
-                        <p>この作品の簡単な説明をここに書きます。使用した技術なども記載すると良いでしょう。(例: HTML, CSS, JavaScript)</p>
-                        <a href="#" target="_blank">サイトを見る &rarr;</a>
-                    </div>
-                    <div class="work-item">
-                        <img src="images/work2.jpg" alt="作品2の画像">
-                        <h3>作品タイトル 2</h3>
-                        <p>この作品の簡単な説明をここに書きます。使用した技術なども記載すると良いでしょう。(例: Photoshop, Illustrator)</p>
-                        <a href="#" target="_blank">詳細を見る &rarr;</a>
-                    </div>
-                    <div class="work-item">
-                        <img src="images/work3.jpg" alt="作品3の画像">
-                        <h3>作品タイトル 3</h3>
-                        <p>この作品の簡単な説明をここに書きます。使用した技術なども記載すると良いでしょう。(例: React, Node.js)</p>
-                        <a href="#" target="_blank">GitHub &rarr;</a>
+                <h2>Blog</h2>
+                <p class="section-description">
+                    当ブログでは、「投資」と「IT」をメインテーマに、役立つ情報を発信しています。
+                </p>
+                <div class="blog-grid">
+                    <div class="blog-card">
+                        <img src="images/blog-thumbnail.jpg" alt="ブログのサムネイル">
+                        <div class="card-content">
+                            <h3>理系大学院生のぼちぼちITノート</h3>
+                            <p>IT業界に身を置いている方や投資をしている方に向けたお役立ち情報を発信中！</p>
+                            <a href="https://bochi-it-note.com/" target="_blank" class="button">ブログへ行く &rarr;</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="skills" class="content-section">
+        <section id="profile" class="content-section">
             <div class="container">
-                <h2>Skills</h2>
-                <ul class="skills-list">
-                    <li>HTML5 & CSS3</li>
-                    <li>JavaScript (ES6+)</li>
-                    <li>React / Vue.js</li>
-                    <li>Node.js</li>
-                    <li>Python</li>
-                    <li>UI/UX Design</li>
-                    <li>Photoshop / Illustrator</li>
-                    <li>プロジェクトマネジメント</li>
-                </ul>
+                <h2>Profile</h2>
+                <div class="profile-grid">
+                    <div class="profile-item">
+                        <h3>Certifications</h3>
+                        <ul>
+                            <li>ITパスポート</li>
+                            <li>基本情報技術者</li>
+                            <li>TOEIC 795点</li>
+                        </ul>
+                    </div>
+                    <div class="profile-item">
+                        <h3>Interests</h3>
+                        <ul>
+                            <li>IT技術の学習</li>
+                            <li>資産形成・投資</li>
+                            <li>アニメ・ゲーム</li>
+                            <li>[その他スキルや興味があれば追記]</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
+
 
         <section id="contact" class="content-section">
             <div class="container">
                 <h2>Contact</h2>
-                <p>お仕事のご依頼やご相談は、以下のメールアドレスまたはSNSからお気軽にご連絡ください。</p>
-                <p class="email">[your-email@example.com]</p>
+                <p>最近、Xでいろいろ情報発信しているので、ぜひフォローをお願いします！</p>
                 <div class="social-links">
-                    <a href="[あなたのGitHubのURL]" target="_blank">GitHub</a>
-                    <a href="[あなたのX(旧Twitter)のURL]" target="_blank">X (Twitter)</a>
-                    <a href="[あなたのLinkedInのURL]" target="_blank">LinkedIn</a>
+                    <a href="https://twitter.com/bochi_it" target="_blank" class="button social-button">X (旧Twitter) をフォロー</a>
                 </div>
+                <p style="margin-top: 40px;">
+                    最後までお読みいただき、ありがとうございました。
+                </p>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 [あなたの名前]. All Rights Reserved.</p>
+            <p>&copy; 2025 Bochipen. All Rights Reserved.</p>
         </div>
     </footer>
 
