@@ -1,5 +1,248 @@
+/* ===== 基本設定 ===== */
+:root {
+    --primary-color: #3498db; /* メインカラー */
+    --text-color: #333; /* 基本テキストカラー */
+    --bg-color: #f4f4f4; /* 背景色 */
+    --light-bg-color: #ffffff; /* セクションの背景色 */
+    --heading-font: 'Noto Sans JP', sans-serif;
+    --body-font: 'Noto Sans JP', sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    margin: 0;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    font-weight: 700;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== ヘッダー ===== */
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background: var(--light-bg-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+/* ===== ヒーローセクション ===== */
+#hero {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.button {
+    background: var(--light-bg-color);
+    color: var(--primary-color);
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: #e0e0e0;
+}
+
+/* ===== コンテンツセクション共通 ===== */
+.content-section {
+    padding: 80px 0;
+    background-color: var(--light-bg-color);
+}
+.content-section:nth-child(odd) {
+    background-color: var(--bg-color); /*交互に色を変える*/
+}
+
+/* ===== Aboutセクション ===== */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* ===== Worksセクション ===== */
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.work-item {
+    background: var(--light-bg-color);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.work-item:hover {
+    transform: translateY(-5px);
+}
+
+.work-item img {
+    display: block;
+}
+
+.work-item h3, .work-item p, .work-item a {
+    padding: 0 20px;
+}
+
+.work-item h3 {
+    margin-top: 20px;
+}
+
+.work-item a {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* ===== Skillsセクション ===== */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skills-list li {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* ===== Contactセクション ===== */
+#contact {
+    text-align: center;
+}
+
+.email {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.social-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+/* ===== フッター ===== */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: white;
+}
+
+/* ===== レスポンシブ対応 ===== */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 15px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
 }
