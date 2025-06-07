@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bochipen's Portfolio</title>
+    <title>Bochipen | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
+    <header class="main-header">
         <div class="container">
             <a href="#" class="logo">Bochipen</a>
-            <nav>
+            <nav class="main-nav">
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#blog">Blog</a></li>
@@ -28,42 +28,42 @@
     <main>
         <section id="hero">
             <div class="container">
-                <h1>ぼちペン</h1>
-                <p>理系大学院生 / Aspiring SIer</p>
+                <h1 class="hero-title">Bochipen's Note</h1>
+                <p class="hero-subtitle">A Science Graduate's Journey into IT & Investment.</p>
             </div>
         </section>
 
         <section id="about" class="content-section">
             <div class="container">
-                <h2>About Me</h2>
-                <div class="about-content">
-                    <p>
-                        はじめまして！「理系大学院生のぼちぼちITノート」を運営する、ぼちペンと申します。<br>
-                        現在、理系の大学院修士2年で、2026年度からユーザー系SIerに勤務予定です。<br>
-                        個人的に資産形成やITの勉強に取り組んでおり、その過程で得た知識や経験を発信しています。
-                    </p>
-                    <h3>Why I Blog</h3>
-                    <p>
-                        私がブログを運営している理由は、単にお金を稼ぐためだけではありません。自ら情報発信する媒体を持つこと、そしてアウトプットを前提とすることで様々なことへ興味を広げ、知識を深めるモチベーションに繋がると考えています。金銭以上の価値ある経験を積み重ねていくことが目標です。
-                    </p>
-                </div>
+                <h2 class="section-title">About Me</h2>
+                <article class="about-content">
+                    <div class="about-text">
+                        <h3>はじめまして。ぼちペンです。</h3>
+                        <p>
+                            「理系大学院生のぼちぼちITノート」を運営しています。現在、理系の大学院修士2年で、2026年度からユーザー系SIerに勤務予定です。個人的に資産形成やITの勉強に取り組んでおり、その過程で得た知識や経験を発信しています。
+                        </p>
+                    </div>
+                    <div class="about-reason">
+                        <h3>Why I Blog</h3>
+                        <p>
+                            自ら情報発信する媒体を持つこと、そしてアウトプットを前提とすることで様々なことへ興味を広げ、知識を深めるモチベーションに繋がると考えています。金銭以上の価値ある経験を積み重ねていくことが目標です。
+                        </p>
+                    </div>
+                </article>
             </div>
         </section>
 
         <section id="blog" class="content-section">
             <div class="container">
-                <h2>Blog</h2>
-                <p class="section-description">
-                    当ブログでは、「投資」と「IT」をメインテーマに、役立つ情報を発信しています。
-                </p>
-                <div class="blog-grid">
-                    <div class="blog-card">
+                <h2 class="section-title">Blog</h2>
+                <div class="blog-card">
+                    <div class="blog-card-image">
                         <img src="images/blog-thumbnail.jpg" alt="ブログのサムネイル">
-                        <div class="card-content">
-                            <h3>理系大学院生のぼちぼちITノート</h3>
-                            <p>IT業界に身を置いている方や投資をしている方に向けたお役立ち情報を発信中！</p>
-                            <a href="https://bochi-it-note.com/" target="_blank" class="button">ブログへ行く &rarr;</a>
-                        </div>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3>理系大学院生のぼちぼちITノート</h3>
+                        <p>「投資」と「IT」をメインテーマに、役立つ情報を発信中。IT業界に身を置いている方や投資をしている方に向けたお役立ち情報を発信していきます！</p>
+                        <a href="https://bochi-it-note.com/" target="_blank" class="button">Visit Blog &rarr;</a>
                     </div>
                 </div>
             </div>
@@ -71,45 +71,56 @@
 
         <section id="profile" class="content-section">
             <div class="container">
-                <h2>Profile</h2>
+                <h2 class="section-title">Profile & Skills</h2>
                 <div class="profile-grid">
-                    <div class="profile-item">
+                    <div class="profile-card">
                         <h3>Certifications</h3>
                         <ul>
-                            <li>ITパスポート</li>
-                            <li>基本情報技術者</li>
-                            <li>TOEIC 795点</li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                                <span>ITパスポート</span>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"></path><path d="M12 18v-4"></path><path d="m16 14-4 4"></path><path d="M12 6V2"></path><path d="M4.93 4.93 7.76 7.76"></path><path d="M2 12h4"></path><path d="m19.07 4.93-2.83 2.83"></path><path d="M22 12h-4"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                                <span>基本情報技術者</span>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg>
+                                <span>TOEIC 795点</span>
+                            </li>
                         </ul>
                     </div>
-                    <div class="profile-item">
+                    <div class="profile-card">
                         <h3>Interests</h3>
                         <ul>
-                            <li>IT技術の学習</li>
-                            <li>資産形成・投資</li>
-                            <li>アニメ・ゲーム</li>
-                            <li>[その他スキルや興味があれば追記]</li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                                <span>IT技術の学習 (Web, Cloud)</span>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                                <span>資産形成・投資</span>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12h4m-2 2v-4M20 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2Z"></path></svg>
+                                <span>アニメ・ゲーム</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-
         <section id="contact" class="content-section">
-            <div class="container">
-                <h2>Contact</h2>
+            <div class="container contact-container">
+                <h2 class="section-title">Get In Touch</h2>
                 <p>最近、Xでいろいろ情報発信しているので、ぜひフォローをお願いします！</p>
-                <div class="social-links">
-                    <a href="https://twitter.com/bochi_it" target="_blank" class="button social-button">X (旧Twitter) をフォロー</a>
-                </div>
-                <p style="margin-top: 40px;">
-                    最後までお読みいただき、ありがとうございました。
-                </p>
+                <a href="https://twitter.com/bochi_it" target="_blank" class="button">Follow me on X &rarr;</a>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="main-footer">
         <div class="container">
             <p>&copy; 2025 Bochipen. All Rights Reserved.</p>
         </div>
